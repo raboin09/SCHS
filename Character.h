@@ -11,11 +11,21 @@ public:
 	int getHP();
 	int getAtk();
 	void setHP(int hp);
-	boid setAtk(int atk);
+	void setAtk(int atk);
 
 protected:
 	int attack;
 	int health;
 };
+
+Character::Character(int atk, int hp) {
+	setAtk(atk);
+	setHP(hp);
+}
+
+Character::Character() {
+	setAtk(0);
+	setHP(1);
+}
 
 #endif
